@@ -408,6 +408,7 @@ footer {
     .three {
       flex-direction: column;
       height: 100%;
+      padding: 20px 10px;
     }
     .subscribe {
         margin: 0px;
