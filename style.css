@@ -48,11 +48,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+  
 }
 
 .informations {
-    width: 50%;
+    width: 600px;
     margin-right: 20px;
+   
     
 }
 .informations h1 {
@@ -68,9 +71,12 @@
     font-family: 'Open Sans', sans-serif;
     
 }
+.img {
+    width: 550px;
+}
+
 .img img{
-    max-width: 550px;
-   
+    width: 100%;
 }
 #email {
     width: 350px;
@@ -96,12 +102,14 @@
 
 .main-two {
    height: 600px;
+   width: 100%;
 }
 
 .two {
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
 
 .two .informations h1 {
@@ -117,7 +125,7 @@
 }
 
 .two .informations {
-    width: 50%;
+    width: 600px;
     margin-right: 20px;
 }
 
@@ -129,16 +137,18 @@
 }
 
 .commentary {
-    width: 350px;
+    width: 50%;
+    height: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 20px 0px;
-    margin: 20px 0px;
+    margin: 20px 20px;
     border-radius: 3px;
+    position: relative;
 }
 
 .quote {
    position: absolute;
-   left: 60px;
+   left: 20px;
 }
 
 
@@ -214,7 +224,7 @@
 
 .footer {
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     height: 300px;
     background-color: var(--very-dark-blue);
@@ -237,6 +247,14 @@
     border-radius: 40%;
 }
 
+.footer-informations{
+    margin-left: 20px;
+}
+
+.footer-informations p{
+    margin: 20px 10px;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -244,5 +262,105 @@ footer {
     padding: 20px;
 }
 
+/* media queries */
 
+@media screen and (max-width: 998px) {
+    .informations{
+        
+        width: 500px;
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+    #email {
+        width: 250px;
+    }
+
+    .informations button {
+       
+        font-size: 0.7rem;
+        padding: 11px 30px;
+        
+    }
+
+    .commentary {
+        
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .informations {
+        
+    }
+
+     .informations h1 {
+        
+        font-size: 1.5rem;
+    }
+
+    .informations p {
+        
+        font-size: 0.8rem;
+    }
+
+    .two .informations h1{
+        
+        font-size: 1.5rem;
+    }
+
+    .two .informations p{
+        
+        font-size: 0.8rem;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 375px){
+    .one {
+        flex-direction: column-reverse;
+    }
+    .informations {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img {
+        width: 100%;
+    }
+    .main-two {
+        height: 900px;
+    }
+    .two {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    
+    .two .informations {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .commentary {
+        width: 60%;
+        height: 60%;
+        color: antiquewhite;
+    }
+
+    .author img {
+        
+    }
+}
 
