@@ -78,7 +78,7 @@
 .img img{
     width: 100%;
 }
-#email {
+.informations input {
     width: 350px;
     padding: 10px 10px;
     margin-right: 10px;
@@ -160,19 +160,16 @@
 .author {
     display: flex;
     margin-left: 8px;
-   
-   
- 
 }
+
 .author span {
     display: block;
-   
 }
+
 .author img {
     margin-left: 10px;
     width: 50px;
     border-radius: 50%;
-    
 }
 
 .subtitles {
@@ -275,7 +272,7 @@ footer {
         width: 100%;
     }
 
-    #email {
+    .informations input {
         width: 250px;
     }
 
@@ -318,7 +315,7 @@ footer {
 }
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 450px){
     .navbar{
         width: 100%;
         padding: 20px 0px;
