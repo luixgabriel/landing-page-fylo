@@ -363,7 +363,7 @@ footer {
         text-align: center;
     }
 
-    #email{
+    .informations input{
         width: 80%;
         margin: 10px 0px;
     }
